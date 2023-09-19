@@ -41,7 +41,7 @@
 
   ### SASS features
 
-  **Variables:** for reusable values such as colors, font-sizes, spacing, etc.
+  **Variables:**  for reusable values such as colors, font-sizes, spacing, etc.
 
   **Nesting:** to nest selectors inside of one another, allowing us to write less code.
 
@@ -56,3 +56,7 @@
   **Extends:** to make different selectors inherit declarations that are commom to all of them.
   
   **Control directives:** for writing complex code using conditional and loops.
+
+  ## SASS Intro
+
+  [SASS Intro code pen](https://codepen.io/plnmbuhn-the-decoder/pen/poqdrwQ?editors=1100)  

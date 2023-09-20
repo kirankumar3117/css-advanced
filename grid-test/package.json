@@ -1,0 +1,14 @@
+{
+  "name": "grid-test",
+  "version": "1.0.0",
+  "description": "grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass main.scss style.css -w"
+  },
+  "author": "kiran",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

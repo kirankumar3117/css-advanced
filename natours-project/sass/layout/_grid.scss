@@ -13,25 +13,11 @@ $gutter-horizontal : 6rem;
     }
 }
 
-*{
-    margin:0;
-    padding: 0;
-};
 
-body{
-    font-size: 10px;
-}
-
-section{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1.5;
-}
 .row{
     max-width:$grid-width;
-    background-color: #eee;
-    margin: 0 auto;
+    // background-color: #eee;
+    margin : 0 auto;
     &:not(:last-child){
         margin-bottom: $gutter-verticle;
     }
@@ -41,7 +27,6 @@ section{
     @include clearfix;
 
     [class^="col-"] {
-        background-color: orangered;
         float: left;
         height: 50px;
 

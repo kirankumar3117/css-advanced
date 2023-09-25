@@ -3,6 +3,7 @@
 
 $grid-width : 114rem;
 $gutter-verticle: 8rem;
+$gutter-verticle-small: 6rem;
 $gutter-horizontal : 6rem;
 
 @mixin clearfix {
@@ -17,21 +18,41 @@ $gutter-horizontal : 6rem;
 .row{
     max-width:$grid-width;
     // background-color: #eee;
-    margin : 0 auto;
+    margin : 0rem auto;
+
     &:not(:last-child){
         margin-bottom: $gutter-verticle;
+
+        @include respond(tab-port) {
+            margin-bottom: $gutter-verticle-small;
+         }
     }
+    
     &:last-child{
         margin-bottom: 2rem;
     }
+
+     @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+     }
+
     @include clearfix;
 
     [class^="col-"] {
         float: left;
-        height: 50px;
 
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+               margin-right: 0;
+               margin-bottom: $gutter-verticle-small;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 
